@@ -28,7 +28,8 @@ public class PlatformRepo : IPlatformRepo
 
     public Platform GetPlatformById(int id)
     {
-        return _context.Platforms.FirstOrDefault(p => p.Id == id);
+        return _context.Platforms.FirstOrDefault(p => p.Id == id) 
+            ?? throw new InvalidOperationException($"Platform with ID={id} is not found.");
     }
 
     public bool SaveChanges()
