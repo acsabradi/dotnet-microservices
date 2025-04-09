@@ -16,7 +16,7 @@ public static class PrepDb
     {
         if(!context.Platforms.Any())
         {
-            Console.WriteLine("Seeding data...");
+            Console.WriteLine("--> Seeding data...");
 
             context.Platforms.AddRange(
                 new Platform() { Name = "DotNet",               Publisher = "Microsoft",                            Cost = "Free" },
@@ -28,7 +28,7 @@ public static class PrepDb
         }
         else
         {
-            Console.WriteLine("Seeding data is skipped because we already have data.");
+            Console.WriteLine("--> Seeding data is skipped because we already have data.");
         }
     }
 }
