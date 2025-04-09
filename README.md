@@ -19,3 +19,4 @@
 - PlatformService-nél HTTP-t használunk HTTPS helyett
 - API endpoint authorizáció
 - Az endpoint függvények miért nem async?
+- központi logolás console.write helyett
