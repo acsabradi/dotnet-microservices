@@ -15,3 +15,4 @@
 # ToDo
 
 - Minimal API legyen MVC helyett
+- AutoMapper helyett LINQ
