@@ -16,3 +16,5 @@
 
 - Minimal API legyen MVC helyett
 - AutoMapper helyett LINQ
+- PlatformService-nél HTTP-t használunk HTTPS helyett
+- API endpoint authorizáció
