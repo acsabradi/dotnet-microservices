@@ -29,6 +29,27 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get one platform by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5185/api/platforms/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5185",
+							"path": [
+								"api",
+								"platforms",
+								"3"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
