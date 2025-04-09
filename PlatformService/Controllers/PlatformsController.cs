@@ -29,11 +29,14 @@ public class PlatformsController : ControllerBase
     [HttpGet("{id}", Name = "GetPlatformById")]
     public ActionResult<PlatformReadDto> GetPlatformById(int id)
     {
-        var platformItem = _repository.GetPlatformById(id);
-        if (platformItem != null)
+        try
         {
+            var platformItem = _repository.GetPlatformById(id);
             return Ok(_mapper.Map<PlatformReadDto>(platformItem));
         }
-        return NotFound();
+        catch(KeyNotFoundException ex)
+        {
+            return NotFound(ex.Message);
+        }     
     }
 }
