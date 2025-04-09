@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "e834806e-7891-42fc-9a6e-24a2e9b43527",
+		"name": "Microservices tutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43506390",
+		"_collection_link": "https://attila-8889324.postman.co/workspace/Attila's-Workspace~5c13a415-2f2d-4f9b-806c-f98f1d2fcc26/collection/43506390-e834806e-7891-42fc-9a6e-24a2e9b43527?action=share&source=collection_link&creator=43506390"
+	},
+	"item": [
+		{
+			"name": "PlatformService",
+			"item": [
+				{
+					"name": "Get All Platforms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5185/api/platforms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5185",
+							"path": [
+								"api",
+								"platforms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
