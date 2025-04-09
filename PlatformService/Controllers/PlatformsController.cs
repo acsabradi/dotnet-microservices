@@ -50,6 +50,8 @@ public class PlatformsController : ControllerBase
 
         var platformReadDto = _mapper.Map<PlatformReadDto>(platformModel);
 
-        return CreatedAtRoute(nameof(GetPlatformById), new { Id = platformReadDto.Id }, platformReadDto);
+        // Response header -> Location=http://<appUrl>/api/Platforms/<ID of newly added platform>
+        // Response body -> platformReadDto
+        return CreatedAtRoute(nameof(GetPlatformById), new { id = platformReadDto.Id }, platformReadDto);
     }
 }
