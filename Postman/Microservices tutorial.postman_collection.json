@@ -50,6 +50,35 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Create Platform",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"publisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5185/api/platforms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5185",
+							"path": [
+								"api",
+								"platforms"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
