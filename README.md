@@ -20,3 +20,4 @@
 - API endpoint authorizáció
 - Az endpoint függvények miért nem async?
 - központi logolás console.write helyett
+- Podman Docker helyett
