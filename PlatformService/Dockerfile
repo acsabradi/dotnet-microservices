@@ -11,4 +11,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
 COPY --from=build-env /app/out .
 
+ENV ASPNETCORE_URLS="http://0.0.0.0:80"
+EXPOSE 80
+
 ENTRYPOINT ["dotnet", "PlatformService.dll"]
