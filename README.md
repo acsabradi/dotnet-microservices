@@ -68,3 +68,7 @@ Hosting failed to start
       System.InvalidOperationException: Unable to configure HTTPS endpoint. No server certificate was specified, and the default developer certificate could not be found or is out of date.
       To generate a developer certificate run 'dotnet dev-certs https'. To trust the certificate (Windows and macOS only) run 'dotnet dev-certs https --trust'.
 ```
+
+## `vmmemwsl`
+
+WSL kezelésért felel. Docker Desktop leállítás után nem áll le magától, ki kell adni a `wsl --shutdown` parancsot.
