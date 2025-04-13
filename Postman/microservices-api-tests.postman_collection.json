@@ -81,6 +81,33 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "CommandsService",
+			"item": [
+				{
+					"name": "Test inbound connection",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5112/api/c/platforms/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5112",
+							"path": [
+								"api",
+								"c",
+								"platforms",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
