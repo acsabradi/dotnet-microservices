@@ -21,6 +21,7 @@
 - `docker ps`
 - `docker stop <container ID>`
 - `docker start <container ID>`
+- `docker push atcs0/platformservice`
 
 # Kubernetes parancsok
 
