@@ -12,20 +12,23 @@
 - `dotnet add package Microsoft.EntityFrameworkCore.InMemory`
 - `dotnet add package Microsoft.EntityFrameworkCore.SqlServer`
 
-# Docker
+# Docker parancsok
 
-- Docker Desktop
-    - Enable Kubernetes
-- Parancsok
-    - `docker --version`
-    - `docker build -t atcs0/platformservice .`
-    - `docker run -p 8080:80 -d atcs0/platformservice`
-        - mindig új konténert indít el
-    - `docker ps`
-    - `docker stop <container ID>`
-    - `docker start <container ID>`
+- `docker --version`
+- `docker build -t atcs0/platformservice .`
+- `docker run -p 8080:80 -d atcs0/platformservice`
+    - mindig új konténert indít el
+- `docker ps`
+- `docker stop <container ID>`
+- `docker start <container ID>`
 
-## Postman-el tesztelés
+# Kubernetes parancsok
+
+- `kubectl apply -f .\platforms-depl.yaml`
+- `kubectl get deployments`
+- `kubectl get pods`
+
+# Postman-el tesztelés
 
 Alapból a konténer csak a localhost-on hallgatózik, külső kommunikációt nem fogad.
 
@@ -49,6 +52,9 @@ Konténer indításnál a 80-as belső portra kell forward-olni.
     - konténerbe logolás
 - Podman Docker helyett
 - health check
+- k2s a docker desktop-ba beépített k8s helyett
+- kustomization
+- Helm
 
 # Egyéb
 
