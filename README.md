@@ -56,6 +56,11 @@ Konténer indításnál a 80-as belső portra kell forward-olni.
 - k2s a docker desktop-ba beépített k8s helyett
 - kustomization
 - Helm
+- http fájlok postman helyett
+    - https://httpyac.github.io/
+    - https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+    - https://learn.microsoft.com/en-us/aspnet/core/test/http-files?view=aspnetcore-9.0
+- openapi
 
 # Egyéb
 
