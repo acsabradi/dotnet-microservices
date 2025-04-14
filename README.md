@@ -28,6 +28,8 @@
 - `kubectl apply -f .\platforms-depl.yaml`
 - `kubectl get deployments`
 - `kubectl get pods`
+- `kubectl rollout restart deployment platforms-depl`
+    - kikényszeríti a legfrissebb image letöltését
 
 # Postman-el tesztelés
 
