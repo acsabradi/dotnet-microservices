@@ -15,6 +15,8 @@ builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 
+Console.WriteLine($"--> CommandService endpoint: {builder.Configuration["CommandService"]}");
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
