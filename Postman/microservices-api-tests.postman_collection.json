@@ -16,15 +16,16 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5185/api/platforms",
+							"raw": "http://localhost:{{platform-nodeport}}/api/platforms/",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5185",
+							"port": "{{platform-nodeport}}",
 							"path": [
 								"api",
-								"platforms"
+								"platforms",
+								""
 							]
 						}
 					},
@@ -66,12 +67,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5185/api/platforms",
+							"raw": "http://localhost:{{platform-nodeport}}/api/platforms",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5185",
+							"port": "{{platform-nodeport}}",
 							"path": [
 								"api",
 								"platforms"
