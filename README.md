@@ -30,6 +30,8 @@
 - `kubectl get pods`
 - `kubectl rollout restart deployment platforms-depl`
     - kikényszeríti a legfrissebb image letöltését
+- `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.12.1/deploy/static/provider/cloud/deploy.yaml`
+    - [Ingress Nginx](https://kubernetes.github.io/ingress-nginx/deploy/)
 
 # Postman-el tesztelés
 
@@ -79,3 +81,13 @@ Hosting failed to start
 ## `vmmemwsl`
 
 WSL kezelésért felel. Docker Desktop leállítás után nem áll le magától, ki kell adni a `wsl --shutdown` parancsot.
+
+## `hosts`
+
+Ingress fellövése után módosítani kell a `hosts` fájlt. 
+
+Helye:
+- Win: `C:\Windows\System32\drivers\etc\hosts`
+- Linux: `/etc/hosts`
+
+Ezt kell hozzáadni: `127.0.0.1 acme.com`. Mindegy a sorrend. 
