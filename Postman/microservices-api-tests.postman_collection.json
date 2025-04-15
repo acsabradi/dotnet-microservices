@@ -11,7 +11,7 @@
 			"name": "PlatformService",
 			"item": [
 				{
-					"name": "Get All Platforms",
+					"name": "Get All Platforms via NodePort",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -22,6 +22,27 @@
 								"localhost"
 							],
 							"port": "{{platform-nodeport}}",
+							"path": [
+								"api",
+								"platforms",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Platforms via Ingress",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://acme.com/api/platforms/",
+							"protocol": "http",
+							"host": [
+								"acme",
+								"com"
+							],
 							"path": [
 								"api",
 								"platforms",
