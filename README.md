@@ -32,6 +32,10 @@
     - kikényszeríti a legfrissebb image letöltését
 - `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.12.1/deploy/static/provider/cloud/deploy.yaml`
     - [Ingress Nginx](https://kubernetes.github.io/ingress-nginx/deploy/)
+- `kubectl get storageclass`
+    - Default: hostpath
+- `kubectl get pvc`
+    - Storageclass: hostpath
 
 # Postman-el tesztelés
 
@@ -65,6 +69,7 @@ Konténer indításnál a 80-as belső portra kell forward-olni.
     - https://marketplace.visualstudio.com/items?itemName=humao.rest-client
     - https://learn.microsoft.com/en-us/aspnet/core/test/http-files?view=aspnetcore-9.0
 - openapi
+- certificate
 
 # Egyéb
 
