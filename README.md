@@ -70,6 +70,7 @@ Konténer indításnál a 80-as belső portra kell forward-olni.
     - https://learn.microsoft.com/en-us/aspnet/core/test/http-files?view=aspnetcore-9.0
 - openapi
 - certificate
+- build pipeline ([bullseye](https://github.com/adamralph/bullseye) vagy [cake](https://cakebuild.net/))
 
 # Egyéb
 
